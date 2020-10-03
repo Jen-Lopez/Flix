@@ -51,6 +51,7 @@
                                             <outlet property="posterImage" destination="GYl-fR-ipZ" id="Uqf-rv-k3e"/>
                                             <outlet property="synopsis" destination="EW8-G8-8Fa" id="JBO-Og-3q2"/>
                                             <outlet property="title" destination="mQ2-5a-S8E" id="bri-bG-eMq"/>
+                                            <segue destination="ho9-Hu-Avz" kind="show" id="y9L-sR-iaj"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -66,7 +67,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="128.57142857142856"/>
+            <point key="canvasLocation" x="-748" y="339"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="ceI-Nw-KM7">
+            <objects>
+                <viewController id="ho9-Hu-Avz" customClass="MovieDetails" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S8U-6Y-wp4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q0l-as-dyx">
+                                <rect key="frame" x="0.0" y="55" width="414" height="298"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vfz-HP-BUS">
+                                <rect key="frame" x="20" y="236" width="128" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Synopsis" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMS-WZ-JwD">
+                                <rect key="frame" x="33" y="448" width="348" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGW-7D-KUg">
+                                <rect key="frame" x="168" y="384" width="213" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9wC-Qq-UGC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="lRD-0h-bk2"/>
+                    <navigationItem key="navigationItem" id="W5m-iH-ahX"/>
+                    <connections>
+                        <outlet property="bigPoster" destination="Q0l-as-dyx" id="h7i-KD-79O"/>
+                        <outlet property="movieName" destination="kGW-7D-KUg" id="f9B-on-9BL"/>
+                        <outlet property="smallPoster" destination="Vfz-HP-BUS" id="rTR-CX-FGN"/>
+                        <outlet property="synopsis" destination="JMS-WZ-JwD" id="flI-vg-23M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jz0-NC-cGM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="338.83928571428572"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mbb-Jw-Uyi">
@@ -84,7 +132,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g3T-K6-hee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
+            <point key="canvasLocation" x="-1517" y="339"/>
         </scene>
     </scenes>
 </document>
